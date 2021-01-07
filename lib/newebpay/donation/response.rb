@@ -2,7 +2,7 @@
 
 module Newebpay::Donation
   class Response
-    attr_reader :status, :message
+    attr_reader :status, :message, :result
 
     def initialize(response_params)
       @response_data = JSON.parse(response_params.to_json)

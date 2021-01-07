@@ -2,7 +2,7 @@
 
 module Newebpay::MPG
   class Response
-    attr_reader :status, :message, :trade_info, :trade_sha
+    attr_reader :status, :message, :trade_info, :trade_sha, :result
     def initialize(response_params)
       raw_params = Newebpay::NewebpayHelper.decrypt_data(response_params)
 

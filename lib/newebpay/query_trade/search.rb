@@ -3,7 +3,7 @@
 module Newebpay::QueryTrade
   class Search
     REQUIRED_ATTRS = %i[order_number price].freeze
-    attr_accessor :attrs, :merchant_id, :response
+    attr_accessor :attrs, :merchant_id, :response, :result
 
     def initialize(options)
       check_valid(options)
